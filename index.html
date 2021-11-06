@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>Truth Table Application</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1 class="title-primary">Truth Table</h1>
+
+		<div class="row">
+			<div class="col-md-7 col-sm-12">
+				<p class="description">The Website contains a Javascript program which will create/generate a truth table given a well formed formula of the functional logic. You can type your input on the  box that was displayed separated by comma, to get the desired output. 
+					<br>
+					App made by : <b>Mark Daniel Bisac(BSCS 3-A)</b></p>
+			</div>
+			<div class="col-md-5 col-sm-12">
+				<table>
+					<tr>
+						<td>Names</td>
+						<td>Symbols/Connectives</td>
+					</tr>
+					<tr>
+						<td>Negation</td>
+						<td>!</td>
+					</tr>
+					<tr>
+						<td>Conjuction</td>
+						<td>&</td>
+					</tr>
+					<tr>
+						<td>Disjunction</td>
+						<td>||</td>
+					</tr>
+					<tr>
+						<td>Conditional</td>
+						<td><=</td>
+					</tr>
+					<tr>
+						<td>Biconditional</td>
+						<td>===</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<div class="box">
+					<div class="row label-1">
+						<label class="labels">Enter variables(a,b): </label>
+						<input type="text" id="vars">	
+					</div>
+					<div class="row">
+						<label>Enter the Connectives :</label>
+						<input type="text" id="expression">
+					</div>
+					<div class="row">
+						<button id="getResult">Compute the Expression</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="results" id="result"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
